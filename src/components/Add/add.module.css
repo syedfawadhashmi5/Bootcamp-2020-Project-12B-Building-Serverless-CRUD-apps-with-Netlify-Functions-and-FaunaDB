@@ -9,3 +9,37 @@
     display: flex;
     justify-content: center;
 } 
+
+.TextInput {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+  }
+  
+  .contactList {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b63333;
+    color: #ffffff;
+    border-bottom: 1px solid #fefefe;
+    padding: 5px;
+  }
+  
+  h3 {
+    text-align: center;
+    margin: 5vh;
+  }
+  
+  .Icon {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .Icon:hover {
+    color: #ff6123;
+  }

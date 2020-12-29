@@ -4,6 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Button from "@material-ui/core/Button";
 import Swal from "sweetalert2";
+import styles from './EditContent.module.css'
 
 type ContactData = {
   name: string;
@@ -44,7 +45,6 @@ const EditContent: FC<Props> = ({
 };
   
   return (
-    <div className='main_div'>
       <Modal
         open={open}
         onClose={handleClose}
@@ -86,11 +86,9 @@ const EditContent: FC<Props> = ({
           <Grid
             container
             spacing={3}
-            // direction="column"
-            // justify="center"
-            // alignItems="center"
           >
-            <Form>
+                <div className={styles.main_div}>
+            <Form className={styles.from_div}>
               <Grid item xs={10}>
                 <Field
                   defaultValue={name}
@@ -119,10 +117,10 @@ const EditContent: FC<Props> = ({
                 </Button>
               </Grid>
             </Form>
+            </div>
           </Grid>
         </Formik>
       </Modal>
-    </div>
   );
 };
 

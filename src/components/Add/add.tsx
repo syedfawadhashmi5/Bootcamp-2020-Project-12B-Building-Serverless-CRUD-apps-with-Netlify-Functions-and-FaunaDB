@@ -26,7 +26,7 @@ const validationSchema = Yup.object({
 
 const AddContact: FC<Props> = ({ setAddContact }) => {
   return (
-    <div className="Form">
+    <div className={Styles.Form}>
       <Formik
         initialValues={initialValue}
         validationSchema={validationSchema}
@@ -54,7 +54,7 @@ const AddContact: FC<Props> = ({ setAddContact }) => {
           justify="center"
           alignItems="stretch"
         >
-          <Form className="TextInput">
+          <Form className={Styles.TextInput}>
             <div className={Styles.input_div}>
             <Grid item md={4} sm={6} xs={10}>
               <Field

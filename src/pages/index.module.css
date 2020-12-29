@@ -20,6 +20,10 @@
   width: 100%;
   text-align: center;
   margin-top: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .TextInput {
@@ -32,11 +36,11 @@
 }
 
 .contactList {
-  width: 100vw;
+  width: 72vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b63333;
+  background-color: #000000;
   color: #ffffff;
   border-bottom: 1px solid #fefefe;
   padding: 5px;

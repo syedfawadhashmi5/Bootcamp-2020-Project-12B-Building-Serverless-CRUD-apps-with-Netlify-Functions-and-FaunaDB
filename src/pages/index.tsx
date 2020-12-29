@@ -4,7 +4,7 @@ import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
 import AddContact from "../components/Add/add";
 import EditContent from "../components/EditContent/EditContent";
-import './index.css'
+import styles from './index.module.css'
 import Swal from 'sweetalert2';
 
 type data = {
@@ -67,16 +67,16 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <AddContact setAddContact={setAddContact} />
-      <div className='contain_div'>
+      <div className={styles.contain_div}>
         <h1>All Contacts</h1>
         {readData === null || readData.length === 0 ? (
           <h5>Currently No Contacts are added</h5>
         ) : (
           readData.map((contacts: ContactData, ind) => {
             return (
-              <div key={ind} className="contactList">
+              <div key={ind} className={styles.contactList}>
                 <Grid
                   container
                   spacing={3}
