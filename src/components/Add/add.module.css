@@ -1,0 +1,11 @@
+.input_div {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 16px;
+}
+
+.btn_div {
+    display: flex;
+    justify-content: center;
+} 
